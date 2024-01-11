@@ -9,3 +9,9 @@ def index(request):
     context = {'question_list' : question_list}
 
     return render(request, 'pybo/question_list.html', context)
+
+def detail(request, question_id):
+    question = Question.objects.get(id=question_id)
+    return render(request, 'pybo/question_detail.html', {'question' : question})
+
+    
