@@ -2,6 +2,7 @@ from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect
 from .forms import UserForm
 
+from django.contrib.auth import logout
 
 def signup(request):
     if request.method == "POST":
@@ -16,3 +17,8 @@ def signup(request):
     else:
         form = UserForm()
     return render(request, 'common/signup.html', {'form': form})
+
+
+def logout_view(request):
+    logout(request)
+    return redirect('index')
