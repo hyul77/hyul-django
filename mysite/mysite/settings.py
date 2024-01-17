@@ -81,8 +81,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME':  'encore',
         'USER':  'encore',
-        'PASSWORD' : 'dpszhdk!@#',
-        'HOST' : '3.36.39.116',
+        'PASSWORD' : 'dpszhdk!@##',
+        'HOST' : '3.36.139.116',
         'PORT':  '3306'
     }
 }
